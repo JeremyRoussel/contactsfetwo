@@ -1,5 +1,7 @@
 This is a simple Front-End for a locally hosted database of contact information.
 
-It currently mirros the database into local state and modifies both at once, but is being updated to use redux to control the state and pass needed CRUD operations directly to components that need them.
+![Image of Front-End](https://github.com/JeremyRoussel/contactsfetwo/blob/master/FE_Image.png)
+
+It uses Redux-Thunk to make api calls to fetch/add/update/delete contact information in the database. Changes to global state are then propagated out to components based on their subscription to the redux store and the relevant reducer.
 
 It is paired with the database hosted here: https://github.com/JeremyRoussel/ContactsDB
